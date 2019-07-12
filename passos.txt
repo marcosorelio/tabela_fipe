@@ -13,4 +13,11 @@ senha: 12345678
 
 sudo apt-get install php-mysqli
 
+github
 
+echo "# tabela_fipe" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mojunior/tabela_fipe.git
+git push -u origin master
