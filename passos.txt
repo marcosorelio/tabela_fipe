@@ -1,0 +1,16 @@
+CREATE USER 'novousuario'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL PRIVILEGES ON * . * TO 'novousuario'@'localhost';
+
+FLUSH PRIVILEGES;
+
+
+Database
+fipe
+
+usuário: fipe_user
+senha: 12345678
+
+sudo apt-get install php-mysqli
+
+
