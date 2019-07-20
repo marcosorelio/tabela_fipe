@@ -12,7 +12,7 @@ $ch = curl_init();
  //curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-API-Key: ' . $apiKey));
 
 $json = json_decode(curl_exec($ch), true); 
-echo "<h2>veiculos</h2>"  
+echo "<h2>veiculos</h2>";
 echo "<table border='2' >
 		<tr>
 			<th>id</th>
