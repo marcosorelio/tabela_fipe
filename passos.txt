@@ -11,6 +11,8 @@ fipe
 usuário: fipe_user
 senha: 12345678
 
+mysql -u fipe_user -p
+
 sudo apt-get install php-mysqli
 
 github
@@ -21,3 +23,10 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/mojunior/tabela_fipe.git
 git push -u origin master
+
+
+cadastro de novos produtos
+
+banco de dados
+marcas
+

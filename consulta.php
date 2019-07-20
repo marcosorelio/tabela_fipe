@@ -1,11 +1,11 @@
 <?php include 'conectadb.php'; ?>
 
 <html>
-
 <meta charset="UTF-8">
+
 <body>
 
-<?php
+    <?php
 function criarCombo($table,$id)
 {
    $sql = "SELECT * FROM ".$table."";
@@ -19,39 +19,39 @@ function criarCombo($table,$id)
    echo $combo;
 }
 ?>
-<form name="form1" method="post" action="">
-  <select name="select2">
-  <?php criarCombo("carros_veiculo",2); ?>
-  </select>
-</form>
+    <form name="form1" method="post" action="">
+        <select name="select2">
+            <?php criarCombo("carros_veiculo",2); ?>
+        </select>
+    </form>
 
-<form action="/action_page.php">
-  <select name="Marca">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-  <select name="Modelo">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-  <select name="Ano">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-  <br><br>
+    <form action="/action_page.php">
+        <select name="Marca">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <select name="Modelo">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <select name="Ano">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
 
 
-  
-  <input type="submit">
-</form>
 
-<?php
+        <input type="submit">
+    </form>
+
+    <?php
 
 $url1 = 'http://fipeapi.appspot.com/api/1/carros/marcas.json';
 
@@ -84,6 +84,7 @@ foreach($json as $i => $item) {
 
 ?>
 
-</table>
+    </table>
 </body>
+
 </html>

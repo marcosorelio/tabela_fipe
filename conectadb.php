@@ -1,18 +1,14 @@
 <?php
-## Local onde roda o php
-$hostname = 'localhost';
-## Nome de usuári oque tem acesso
-$username = 'fipe_user';
-## Senha do usuario do banco
-$senha = '12345678';
-## Banco de dados desejado
-$banco = 'fipe';
-## Abre uma conexão com o servidor mysql
-$db = mysqli_connect($hostname, $username, $senha, $banco);
-## Seleciona um banco de dados MySql - ordem trocada na versão mais nova
-mysqli_select_db($db,$banco);
 
-if($banco && $db == true){
-    echo "Banco ok";
-  }
+$servername = "localhost";
+$username = "fipe_user";
+$password = "12345678";
+$dbname = "fipe";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>
