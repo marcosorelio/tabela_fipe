@@ -13,6 +13,11 @@
         <option value="">Selecione</option>
             <?php comboVeiculos(); ?>
         </select>
+		
+		<select name="selectVeiculo" onchange="" style="width:200px;">
+        <option value="">Selecione</option>
+            <?php comboVeiculosDetalhe(); ?>
+        </select>
 
 </body>
 </html>
@@ -58,6 +63,30 @@ function comboVeiculos()
         $fipe_id = $json[$i]['id']; 
 
        echo "<option value=\"$fipe_id\">$name</option>";
+    
+    }
+
+
+}
+
+function comboVeiculosDetalhe()
+{
+    $param1 = "21";
+	$param2 = "4828";
+    $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculo/'. $param1 .'/' . $param2 .'.json';
+
+    $ch = curl_init();
+     curl_setopt($ch, CURLOPT_URL, $url1);
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
+
+    $json = json_decode(curl_exec($ch), true); 
+    
+    foreach($json as $i => $item) { 
+
+        $veiculo = $json[$i]['veiculo'];
+        $fipe_id = $json[$i]['id']; 
+
+       echo "<option value=\"$fipe_id\">$veiculo</option>";
     
     }
 
