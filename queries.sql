@@ -20,7 +20,6 @@ CREATE TABLE fipe.carros_marcas (
 
 
 CREATE TABLE fipe.carros_veiculo (
-    id int NOT NULL AUTO_INCREMENT,
     fipe_referencia varchar(255),
     fipe_codigo varchar(255),
     fipe_name varchar(255),
@@ -32,7 +31,7 @@ CREATE TABLE fipe.carros_veiculo (
     fipe_time varchar(255),
     fipe_veiculo varchar(255),
     fipe_id varchar(255),
-    PRIMARY KEY (id)
+    PRIMARY KEY (fipe_id)
 );
 
 INSERT INTO fipe.carros_marcas values('FIAT','Fiat',2,'fiat-21',21);
@@ -42,10 +41,6 @@ INSERT INTO fipe.carros_marcas values('HONDA','Honda',2,'honda-25',25);
 INSERT INTO fipe.carros_marcas values('HYUNDAI','Hyundai',2,'hyundai-26',26);
 
 
-
-
-INSERT INTO fipe.carros_veiculo values(null,'b','2','3','4','5','6','7','8','9','10','11');
-INSERT INTO fipe.carros_veiculo values(null,'c','2','3','4','5','6','7','8','9','10','11');
 
 +----+-----------------+-------------+-----------------------------------+------------------+------------+-----------------+--------------+------------+-----------+-----------------------------------+---------+
 | id | fipe_referencia | fipe_codigo | fipe_name                         | fipe_combustivel | fipe_marca | fipe_ano_modelo | fipe_preco   | fipe_key   | fipe_time | fipe_veiculo                      | fipe_id |
