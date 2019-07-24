@@ -53,7 +53,7 @@ function comboMarca()
 
 function comboVeiculo()
 {
-    $param = "21";
+    $param = "";
     $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculos/'. $param .'.json';  
 
     $ch = curl_init();
@@ -90,8 +90,9 @@ function comboVeiculosAno()
 
         $veiculo = $json[$i]['veiculo'];
         $fipe_id = $json[$i]['id']; 
+		$key=$json[$i]['key'];
 
-       echo "<option value=\"$fipe_id\">$veiculo</option>";
+       echo "<option value=\"$fipe_id\">$veiculo $key </option>";
     
     }
 }
@@ -108,14 +109,17 @@ function comboVeiculosAno()
     
         $json = json_decode(curl_exec($ch), true); 
         
-        foreach($json as $i => $item) { 
+        foreach($json as $item) { 
+			
+			
+            $veiculo = $json['veiculo'];
+            $fipe_id = $json['id']; 
     
-            $veiculo = $json[$i]['veiculo'];
-            $fipe_id = $json[$i]['id']; 
-    
-           echo "<option value=\"$fipe_id\">$veiculo</option>";
+           $combo = $combo .  "<option value=\"$fipe_id\">$veiculo</option>";
         
-        }
+       }
+		
+   echo $combo;
 
 }
 
