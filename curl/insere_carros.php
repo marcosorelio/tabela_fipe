@@ -4,17 +4,22 @@
 </head>
 <body>
 
-<select name="selectMarca" onchange="" style="width:200px;">
+<select name="selectMarca" onchange="fetch_modelo(this.value)" style="width:200px;">
         <option value="">Selecione</option>
-            <?php comboMarcas(); ?>
+            <?php comboMarca(); ?>
         </select>
 
         <select name="selectVeiculo" onchange="" style="width:200px;">
         <option value="">Selecione</option>
-            <?php comboVeiculos(); ?>
+            <?php comboVeiculo(); ?>
         </select>
 		
 		<select name="selectVeiculo" onchange="" style="width:200px;">
+        <option value="">Selecione</option>
+            <?php comboVeiculosAno(); ?>
+        </select>
+
+        <select name="selectVeiculo" onchange="" style="width:200px;">
         <option value="">Selecione</option>
             <?php comboVeiculosDetalhe(); ?>
         </select>
@@ -23,7 +28,7 @@
 </html>
 
 <?php
-function comboMarcas()
+function comboMarca()
 {
     
     $url1 = 'http://fipeapi.appspot.com/api/1/carros/marcas.json';  
@@ -46,7 +51,7 @@ function comboMarcas()
 
 }
 
-function comboVeiculos()
+function comboVeiculo()
 {
     $param = "21";
     $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculos/'. $param .'.json';  
@@ -69,7 +74,7 @@ function comboVeiculos()
 
 }
 
-function comboVeiculosDetalhe()
+function comboVeiculosAno()
 {
     $param1 = "21";
 	$param2 = "4828";
@@ -89,7 +94,28 @@ function comboVeiculosDetalhe()
        echo "<option value=\"$fipe_id\">$veiculo</option>";
     
     }
-
+}
+    function comboVeiculosDetalhe()
+    {
+        $param1 = "21";
+        $param2 = "4828";
+        $param3 = "2013-1";
+        $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculo/'. $param1 .'/' . $param2 .'/'. $param3 .'.json';
+    
+        $ch = curl_init();
+         curl_setopt($ch, CURLOPT_URL, $url1);
+         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
+    
+        $json = json_decode(curl_exec($ch), true); 
+        
+        foreach($json as $i => $item) { 
+    
+            $veiculo = $json[$i]['veiculo'];
+            $fipe_id = $json[$i]['id']; 
+    
+           echo "<option value=\"$fipe_id\">$veiculo</option>";
+        
+        }
 
 }
 
