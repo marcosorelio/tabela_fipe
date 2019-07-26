@@ -1,9 +1,14 @@
 <?php  include './php/dao.php';?>
 <html>
 <head>
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/fetch.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="mojunior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/fetch.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
