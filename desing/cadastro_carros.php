@@ -15,7 +15,7 @@
     <div>
         <div>
             <h2>Anúncie aqui. É fácil vender seu carro!</h2>
-            <h3>Anúncio publicado fácil e rápido</h3>
+            <h2>Anúncio publicado fácil e rápido</h3>
         </div>
 
         <div>

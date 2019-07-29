@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="ISO-8859-1">
-	<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="">
     <meta name="author" content="mojunior">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,9 @@
                 <table class="tb-main">
                     <tr>
                         <td>
-                            <input type="checkbox" name="vehicle" value="Bike" disabled>Moto 
-                            <input type="checkbox" name="vehicle" value="Bike" checked>Carro 
-                            <input type="checkbox" name="vehicle" value="Bike" disabled>Caminhao</td>
+                            <input type="checkbox" name="vehicle" value="1" disabled>Moto 
+                            <input type="checkbox" name="vehicle" value="2" checked>Carro 
+                            <input type="checkbox" name="vehicle" value="3" disabled>CaminhÃ£o</td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -44,26 +44,26 @@
                     <tr>
                         <td>
                             <select name="selectAnoMin" class="st-main">
-                                <option value="">Ano Mínimo</option>
+                                <option value="">Ano MÃ­nimo</option>
 								<?php comboAno("De"); ?>
                             </select>
                         </td>
                         <td>
                             <select name="selectAnoMax" class="st-main">
-                                <option value="">Ano Máximo</option>
-								<?php comboAno("Até"); ?>
+                                <option value="">Ano MÃ¡ximo</option>
+								<?php comboAno("AtÃ©"); ?>
                             </select>
                         </td>
                         <td>
                             <select name="selectPrecMin" class="st-main">
-                                <option value="">Preço Mínimo</option>
+                                <option value="">PreÃ§o MÃ­nimo</option>
 								<?php comboValor("De"); ?>
                             </select>
                         </td>
                         <td>
                             <select name="selectPrecMax" class="st-main">
-                                <option value="">Preço Máximo</option>
-								<?php comboValor("Até"); ?>
+                                <option value="">PreÃ§o MÃ¡ximo</option>
+								<?php comboValor("AtÃ©"); ?>
                             </select>
                         </td>
                     </tr>
@@ -76,12 +76,8 @@
             </form>
         </div>
     </div>
-	
-	
 </body>
-
 </html>
-
 <?php
 function comboMarca()
 {
