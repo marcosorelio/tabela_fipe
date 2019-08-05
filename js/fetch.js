@@ -1,3 +1,18 @@
+function fetch_marca(val)
+{
+ $.ajax({
+ type: 'post',
+ url: './php/dao.php',
+ data: {
+  param_marca:val
+ },
+ success: function (response) {
+  document.getElementById("selectModelo").innerHTML=response; 
+ }
+ });
+}
+
+
 
 function fetch_modelo(val)
 {

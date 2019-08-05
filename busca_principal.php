@@ -6,11 +6,10 @@
     <meta name="author" content="mojunior">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="../js/fetch.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="fetch.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body class="bg">
     <div>
         <div>
@@ -29,39 +28,39 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <select name="selectMarca" class="st-main" style="width: 100% !important;">
+                            <select id="selectMarca" name="selectMarca" class="st-main" style="width: 100% !important;" 
+                            onchange="fetch_marca(this.value)">
                                 <option value="">Marca</option>
 								<?php comboMarca(); ?>
                             </select>
                         </td>
                         <td colspan="2">
-                            <select name="selectModelo" class="st-main" style="width: 100% !important;">
+                            <select id="selectModelo" name="selectModelo" class="st-main" style="width: 100% !important;">
                                 <option value="">Modelo</option>
-							<?php comboVeiculo(); ?>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <select name="selectAnoMin" class="st-main">
+                            <select id="selectAnoMin" name="selectAnoMin" class="st-main">
                                 <option value="">Ano Mínimo</option>
 								<?php comboAno("De"); ?>
                             </select>
                         </td>
                         <td>
-                            <select name="selectAnoMax" class="st-main">
+                            <select id="selectAnoMax" name="selectAnoMax" class="st-main">
                                 <option value="">Ano Máximo</option>
 								<?php comboAno("Até"); ?>
                             </select>
                         </td>
                         <td>
-                            <select name="selectPrecMin" class="st-main">
+                            <select id="selectPrecMin" name="selectPrecMin" class="st-main">
                                 <option value="">Preço Mínimo</option>
 								<?php comboValor("De"); ?>
                             </select>
                         </td>
                         <td>
-                            <select name="selectPrecMax" class="st-main">
+                            <select id="selectPrecMax" name="selectPrecMax" class="st-main">
                                 <option value="">Preço Máximo</option>
 								<?php comboValor("Até"); ?>
                             </select>
@@ -69,7 +68,7 @@
                     </tr>
                     <tr>
                         <td colspan="4">
-                            <input type="submit" value="Anunciar" />
+                            <input type="submit" value="Pesquisar" />
                         </td>
                     </tr>
                 </table>
@@ -174,13 +173,14 @@ function comboVeiculosDetalhe()
 
 
 function comboAno($param){
+    
 	for ($x = 1929; $x <= 2020; $x++) {
 		echo "<option value=\"$x\">$param $x</option>";
-	
 	}
 }
 
 function comboValor($param){
+    
 	for ($x = 4; $x <= 200;$x+=2) {
 		echo "<option value=\"$x\">$param R$ $x mil</option>";
 
