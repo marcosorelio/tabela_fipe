@@ -4,7 +4,6 @@ GRANT ALL PRIVILEGES ON * . * TO 'novousuario'@'localhost';
 
 FLUSH PRIVILEGES;
 
-
 Database
 fipe
 
@@ -25,12 +24,6 @@ git remote add origin https://github.com/mojunior/tabela_fipe.git
 git push -u origin master
 
 
-cadastro de novos produtos
-
-banco de dados
-marcas
-
-
 
 tela inical php iframe
 
@@ -41,5 +34,35 @@ cadastro do usuário wordpress
 carga do fipe
 
 
+# API FIPE
+
+Caminhões
+http://fipeapi.appspot.com/api/1/caminhoes/marcas.json
+
+Motos
+http://fipeapi.appspot.com/api/1/motos/marcas.json
+
+Carros
+http://fipeapi.appspot.com/api/1/carros/marcas.json
+
+# Busca Inicial
+
+Check option
+Carros - Motos -  Caminhões
+
+
+# Cadastro Novos Veiculos
+
+Marca
+Modelo
+Ano Modelo
+Email
+
+# Cadastro de Peças
+
+Marca
+Modelo
+Ano Modelo
+Email
 
 
