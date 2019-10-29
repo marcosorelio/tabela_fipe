@@ -11,7 +11,18 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="bg">
-    <div>
+    
+<div class="barra">
+    <ul class="tabs">
+        <div style ="margin-left: -26px; float: left;"><img src="http://motortotal.com.br/wp-content/uploads/2019/03/cropped-logo-png-1.png" width="130px" height="35px"></div>
+        <div style="text-align: right;">
+            <li><a href='#tab1'>Comprar</a></li>
+            <li><a href='#tab2'>Vender</a></li>
+            <li><a href='#tab3'>Serviços</a></li>
+            <li><a href='#tab4'>Ajuda</a></li><div>
+    </ul>
+</div>
+    <div style="margin-top: 70px;">
         <div>
 
             <h1>Busque aqui</h1>
@@ -22,16 +33,16 @@
                 <table class="tb-main">
                     <tr>
                         <td>
-                            <input type="checkbox" name="vehicle" value="1" disabled>Moto 
-                            <input type="checkbox" name="vehicle" value="2" checked>Carro 
-                            <input type="checkbox" name="vehicle" value="3" disabled>Caminhão</td>
+                            <input type="checkbox" name="vehicle" value="1" disabled >Okm
+                            <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usadas 
+                            
                     </tr>
                     <tr>
                         <td colspan="2">
                             <select id="selectMarca" name="selectMarca" class="st-main" style="width: 100% !important;" 
                             onchange="fetch_marca(this.value)">
                                 <option value="">Marca</option>
-								<?php comboMarca(); ?>
+								<?php //comboMarca(); ?>
                             </select>
                         </td>
                         <td colspan="2">
@@ -44,25 +55,25 @@
                         <td>
                             <select id="selectAnoMin" name="selectAnoMin" class="st-main">
                                 <option value="">Ano Mínimo</option>
-								<?php comboAno("De"); ?>
+								<?php //comboAno("De"); ?>
                             </select>
                         </td>
                         <td>
                             <select id="selectAnoMax" name="selectAnoMax" class="st-main">
                                 <option value="">Ano Máximo</option>
-								<?php comboAno("Até"); ?>
+								<?php //comboAno("Até"); ?>
                             </select>
                         </td>
                         <td>
                             <select id="selectPrecMin" name="selectPrecMin" class="st-main">
                                 <option value="">Preço Mínimo</option>
-								<?php comboValor("De"); ?>
+								<?php //comboValor("De"); ?>
                             </select>
                         </td>
                         <td>
                             <select id="selectPrecMax" name="selectPrecMax" class="st-main">
                                 <option value="">Preço Máximo</option>
-								<?php comboValor("Até"); ?>
+								<?php //comboValor("Até"); ?>
                             </select>
                         </td>
                     </tr>

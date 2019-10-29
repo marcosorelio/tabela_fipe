@@ -12,6 +12,14 @@
 </head>
 
 <body class="bg">
+<div class="barra">
+    <ul class="tabs">
+            <li><a href='#tab1'>Comprar</a></li>
+            <li><a href='#tab2'>Vender</a></li>
+            <li><a href='#tab3'>Serviços</a></li>
+            <li><a href='#tab4'>Ajuda</a></li>
+    </ul>
+</div>
     <div>
         <div>
             <h2>Anúncie aqui. É fácil vender seu carro!</h2>
@@ -27,7 +35,7 @@
                             <select id="selectMarca" name="selectMarca" class="st-main" 
                             onchange="fetch_marca(this.value)">
                                 <option value="">Selecione</option>
-                                <?php comboMarca(); ?>
+                              <?php //comboMarca(); ?> 
                             </select>
                         </td>
                     </tr>
@@ -68,8 +76,9 @@
 </body>
 
 </html>
-<?php
 
+<?php
+/*
 function comboMarca()
 {    
     $url1 = 'http://fipeapi.appspot.com/api/1/carros/marcas.json';  
@@ -90,5 +99,5 @@ function comboMarca()
     }
 
 }
-
+*/
 ?>

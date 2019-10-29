@@ -11,7 +11,7 @@ h2 {
 
 .tb-main {
     font-family: 'Open Sans', Arial, sans-serif;
-    width 800px;
+    width: 800px;
     border-spacing: 10px 0px;
 }
 
@@ -105,4 +105,27 @@ input[type="checkbox"]:disabled:after {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+.barra {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    
+  }
+
+
+.tabs li {
+	list-style:none;
+	display:inline;
+
+}
+.tabs a {
+	padding:5px 20px 5px 0;
+	text-decoration:none;
+	
+
 }
