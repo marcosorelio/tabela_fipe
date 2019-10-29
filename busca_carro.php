@@ -25,7 +25,7 @@
     <div style="margin-top: 70px;">
         <div>
 
-            <h1>Busque aqui</h1>
+           <center> <h1>Busque aqui seu Carro</h1></center>
         </div>
 
         <div>
@@ -33,7 +33,7 @@
                 <table class="tb-main">
                     <tr>
                         <td>
-                            <input type="checkbox" name="vehicle" value="1" disabled >Okm
+                            <input type="checkbox" name="vehicle" value="1" checked >Okm
                             <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usadas 
                             
                     </tr>

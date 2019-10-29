@@ -1,6 +1,9 @@
 .bg {
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', Arial, Verdana, sans-serif;
+    background-image: url("https://img2.icarros.com/principal/v1/images/hero_home.jpg");
+    background-size: 100% auto;
 }
 
 h1,
@@ -28,7 +31,7 @@ select {
 
 input[type=submit] {
     width: 400px;
-    background-color: #4CAF50;
+    background-color: #004591;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -40,7 +43,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #2b64a3;
 	
 }
 
@@ -60,7 +63,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    background: #45a049;
+    background: #004591;
 }
 
 input[type="checkbox"]:hover {
