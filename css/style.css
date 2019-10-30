@@ -2,8 +2,11 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', Arial, Verdana, sans-serif;
-    background-image: url("https://img2.icarros.com/principal/v1/images/hero_home.jpg");
+    background-image: url("background.jpg");
     background-size: 100% auto;
+    color:white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1,
@@ -30,7 +33,7 @@ select {
 }
 
 input[type=submit] {
-    width: 400px;
+    width: 492px;
     background-color: #004591;
     color: white;
     padding: 14px 20px;
@@ -39,7 +42,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 30px;
-    float: right;
+    /*float: right;*/
 }
 
 input[type=submit]:hover {

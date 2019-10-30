@@ -19,7 +19,7 @@
             <li><a href='#tab1'>Comprar</a></li>
             <li><a href='#tab2'>Vender</a></li>
             <li><a href='#tab3'>Serviços</a></li>
-            <li><a href='#tab4'>Ajuda</a></li><div>
+            <li><a href='#tab4'>Entrar   </a></li><div>
     </ul>
 </div>
     <div style="margin-top: 70px;">
@@ -34,7 +34,7 @@
                     <tr>
                         <td>
                             <input type="checkbox" name="vehicle" value="1" checked >Okm
-                            <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usadas 
+                            <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usados 
                             
                     </tr>
                     <tr>

@@ -14,13 +14,15 @@
 <body class="bg">
 <div class="barra">
     <ul class="tabs">
+        <div style ="margin-left: -26px; float: left;"><img src="http://motortotal.com.br/wp-content/uploads/2019/03/cropped-logo-png-1.png" width="130px" height="35px"></div>
+        <div style="text-align: right;">
             <li><a href='#tab1'>Comprar</a></li>
             <li><a href='#tab2'>Vender</a></li>
             <li><a href='#tab3'>Serviços</a></li>
-            <li><a href='#tab4'>Ajuda</a></li>
+            <li><a href='#tab4'>Entrar   </a></li><div>
     </ul>
 </div>
-    <div>
+    <div style="margin-top: 70px;">
         <div>
             <h2>Anúncie aqui. É fácil vender seu carro!</h2>
             <h2>Anúncio publicado fácil e rápido</h3>
@@ -30,7 +32,7 @@
             <form action="/action_page.php">
                 <table class="tb-main">
                     <tr>
-                        <td>Marca</td>
+                        <td>Email</td>
                         <td>
                             <select id="selectMarca" name="selectMarca" class="st-main" 
                             onchange="fetch_marca(this.value)">
@@ -40,7 +42,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Modelo</td>
+                        <td>CEP</td>
                         <td>
                             <select id="selectModelo" name="selectModelo" class="st-main" 
                             onchange="fetch_modelo(this.value)">
@@ -49,7 +51,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Ano Modelo</td>
+                        <td>Logradouro</td>
                         <td>
                             <select id ="selectAno" name="selectAno" class="st-main" 
                             onchange="fetch_ano(this.value)">>
@@ -58,7 +60,49 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Email</td>
+                        <td>Bairro</td>
+                        <td>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Estado</td>
+                        <td>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cidade</td>
+                        <td>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telefone</td>
+                        <td>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Celular</td>
+                        <td>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Km</td>
+                        <td>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cor</td>
                         <td>
                             <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
@@ -66,7 +110,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="submit" value="Anunciar" />
+                            <input type="submit" value="Continuar" />
                         </td>
                     </tr>
                 </table>
