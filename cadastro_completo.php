@@ -29,7 +29,7 @@
         </div>
 
         <div>
-            <form action="/action_page.php">
+            <form>
                 <table class="tb-main">
                     <tr>
                         <td>Email</td>

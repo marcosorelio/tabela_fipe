@@ -5,16 +5,24 @@
     <meta name="description" content="">
     <meta name="author" content="mojunior">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="fetch.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="bg">
-    <div>
+<div class="barra">
+    <ul class="tabs">
+        <div style ="margin-left: -26px; float: left;"><img src="http://motortotal.com.br/wp-content/uploads/2019/03/cropped-logo-png-1.png" width="130px" height="35px"></div>
+        <div style="text-align: right;">
+            <li><a href='#tab1'>Comprar</a></li>
+            <li><a href='#tab2'>Vender</a></li>
+            <li><a href='#tab3'>Serviços</a></li>
+            <li><a href='#tab4'>Entrar   </a></li><div>
+    </ul>
+</div>
+    <div style="margin-top: 70px;">
         <div>
-
-            <h1>Busque aqui</h1>
+           <center><h1>Busque aqui seu Caminhão</h1></center>
         </div>
 
         <div>
@@ -22,9 +30,8 @@
                 <table class="tb-main">
                     <tr>
                         <td>
-                            <input type="checkbox" name="vehicle" value="1" disabled>Moto 
-                            <input type="checkbox" name="vehicle" value="2" checked>Carro 
-                            <input type="checkbox" name="vehicle" value="3" disabled>Caminhão</td>
+                        <input type="checkbox" name="vehicle" value="1" checked >Okm
+                            <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usados </td>
                     </tr>
                     <tr>
                         <td colspan="2">

@@ -29,12 +29,12 @@
         </div>
 
         <div>
-            <form action="/action_page.php">
+            <form>
                 <table class="tb-main">
                     <tr>
                         <td>
                             <input type="checkbox" name="vehicle" value="1" checked >Okm
-                            <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usados 
+                            <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usados</td> 
                             
                     </tr>
                     <tr>
