@@ -29,7 +29,7 @@
         </div>
 
         <div>
-            <form action="/action_page.php">
+            <form>
                 <table class="tb-main">
                     <tr>
                         <td>Email</td>
@@ -117,7 +117,7 @@
                         <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
                         <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
                         <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike 2<br>
                         </td>
                     </tr>
                     <tr>

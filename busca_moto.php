@@ -11,21 +11,31 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="bg">
-
-    <div>
+    
+<div class="barra">
+    <ul class="tabs">
+        <div style ="margin-left: -26px; float: left;"><img src="http://motortotal.com.br/wp-content/uploads/2019/03/cropped-logo-png-1.png" width="130px" height="35px"></div>
+        <div style="text-align: right;">
+            <li><a href='#tab1'>Comprar</a></li>
+            <li><a href='#tab2'>Vender</a></li>
+            <li><a href='#tab3'>Serviços</a></li>
+            <li><a href='#tab4'>Entrar   </a></li><div>
+    </ul>
+</div>
+    <div style="margin-top: 70px;">
         <div>
 
-            <h1>Busque aqui</h1>
+           <center><h1>Busque aqui sua Moto</h1></center>
         </div>
 
         <div>
-            <form action="/action_page.php">
+            <form action="php/carrega_moto.php" method="post">
                 <table class="tb-main">
                     <tr>
                         <td>
-                            <input type="checkbox" name="vehicle" value="1" disabled>Moto 
-                            <input type="checkbox" name="vehicle" value="2" checked>Carro 
-                            <input type="checkbox" name="vehicle" value="3" disabled>Caminhão</td>
+                        <input type="hidden" name="tabela" value="moto">
+                        <input type="checkbox" name="vehicle" value="1" checked >Okm
+                        <input style="margin-left: 10px;" type="checkbox" name="vehicle" value="2" checked>Usados</td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -82,7 +92,7 @@
 function comboMarca()
 {
     
-    $url1 = 'http://fipeapi.appspot.com/api/1/moto/marcas.json';  
+    $url1 = 'http://fipeapi.appspot.com/api/1/motos/marcas.json';  
 
     $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL, $url1);
@@ -104,7 +114,7 @@ function comboMarca()
 function comboVeiculo()
 {
     $param = "21";
-    $url1 = 'http://fipeapi.appspot.com/api/1/moto/veiculos/'. $param .'.json';  
+    $url1 = 'http://fipeapi.appspot.com/api/1/motos/veiculos/'. $param .'.json';  
 
     $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL, $url1);
@@ -127,7 +137,7 @@ function comboVeiculosAno()
 {
     $param1 = "21";
 	$param2 = "4828";
-    $url1 = 'http://fipeapi.appspot.com/api/1/moto/veiculo/'. $param1 .'/' . $param2 .'.json';
+    $url1 = 'http://fipeapi.appspot.com/api/1/motos/veiculo/'. $param1 .'/' . $param2 .'.json';
 
     $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL, $url1);
@@ -151,7 +161,7 @@ function comboVeiculosDetalhe()
         $param1 = "21";
         $param2 = "4828";
         $param3 = "2013-1";
-        $url1 = 'http://fipeapi.appspot.com/api/1/moto/veiculo/'. $param1 .'/' . $param2 .'/'. $param3 .'.json';
+        $url1 = 'http://fipeapi.appspot.com/api/1/motos/veiculo/'. $param1 .'/' . $param2 .'/'. $param3 .'.json';
     
         $ch = curl_init();
          curl_setopt($ch, CURLOPT_URL, $url1);
