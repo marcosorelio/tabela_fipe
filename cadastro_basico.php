@@ -34,77 +34,62 @@
                     <tr>
                         <td>Email</td>
                         <td>
-                            <select id="selectMarca" name="selectMarca" class="st-main" 
-                            onchange="fetch_marca(this.value)">
-                                <option value="">Selecione</option>
-                              <?php //comboMarca(); ?> 
-                            </select>
+                            <input id ="url" type="hidden" class="txt-main" required />
+                            <input id ="email" type="text" class="txt-main" required />
+                        </td>t>
                         </td>
                     </tr>
                     <tr>
                         <td>CEP</td>
                         <td>
-                            <select id="selectModelo" name="selectModelo" class="st-main" 
-                            onchange="fetch_modelo(this.value)">
-                                <option value="">Selecione</option>
-                            </select>
+                            <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Logradouro</td>
                         <td>
-                            <select id ="selectAno" name="selectAno" class="st-main" 
-                            onchange="fetch_ano(this.value)">>
-                                <option value="">Selecione</option>
-                            </select>
+                            <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Bairro</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Estado</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Cidade</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Telefone</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Celular</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Km</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
                     <tr>
                         <td>Cor</td>
                         <td>
-                            <input id ="url" type="hidden" class="txt-main" required />
                             <input id ="email" type="text" class="txt-main" required />
                         </td>
                     </tr>
