@@ -88,28 +88,36 @@
                     <tr>
                         <td>Segurança<br><br>
                             <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>airbag lateral<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>airbag motorista<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>airbag passageiro<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>alarme<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>blindado<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>controle de tração<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
                     </td>
                         <td>Conforto<br><br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>ar-condicionado<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>ar-quente<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>câmbio automático<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>direção elétrica<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>direção hidráulica<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>piloto automático<br> 
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
                         </td>
                         <td>Sistema de Som<br><br>  
-                        <input type="checkbox" name="vehicle" value="Car" checked>cd player<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>cd player com MP3<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>entrada USB<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>Kit Multimidia<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>rádio FM/AM<br>
-                        <input type="checkbox" name="vehicle" value="Car" checked>toca-fitas<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked>I have a bike 2<br>
                         </td>
                     </tr>
                     <tr>
