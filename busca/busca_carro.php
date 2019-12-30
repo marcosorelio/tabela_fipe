@@ -169,25 +169,31 @@ fieldset {
       <h3> Busque aqui seu Carro! <i class="fa fa-car" aria-hidden="true"></i></h3>
       <h4>Anunciou, vendeu. Quando você perceber, já foi! </h4></center>
       <fieldset>
-        <select id="selectMarca" name="selectMarca" >
+        <select id="selectMarca" name="selectMarca" onchange="fetch_marca(this.value)">
         <option value="">Marca</option>
+        <?php comboMarca(); ?>
         </select>
         <select id="selectModelo" name="selectModelo" >
-          <option value="">Modelo</option>
+        <option value="">Modelo</option>
+								<?php comboVeiculo(); ?>
           </select>
       </fieldset>
       <fieldset>
         <select id="selectModelo" name="selectModelo" style="width:25%">
-        <option value="">Modelo</option>
+        <option value="">Ano Mínimo</option>
+								<?php comboAno("De"); ?>
         </select>
         <select id="selectAno" name="selectAno" style="width:25%" >
-          <option value="">Ano</option>
+        <option value="">Ano Máximo</option>
+								<?php comboAno("Até"); ?>
           </select>
           <select id="selectAno" name="selectAno" style="width:25%">
-            <option value="">Ano</option>
+          <option value="">Preço Mínimo</option>
+								<?php comboValor("De"); ?>
             </select>
             <select id="selectAno" name="selectAno" style="width:25%">
-              <option value="">Ano</option>
+            <option value="">Preço Máximo</option>
+								<?php comboValor("Até"); ?>
               </select>
       </fieldset>
     </fieldset>
@@ -200,3 +206,114 @@ fieldset {
 
 </body>
 </html>
+<?php
+function comboMarca()
+{
+    
+    $url1 = 'http://fipeapi.appspot.com/api/1/carros/marcas.json';  
+
+    $ch = curl_init();
+     curl_setopt($ch, CURLOPT_URL, $url1);
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
+
+    $json = json_decode(curl_exec($ch), true); 
+    
+    foreach($json as $i => $item) { 
+
+        $name = $json[$i]['name'];
+        $fipe_id = $json[$i]['id']; 
+
+       echo "<option value=\"$fipe_id\">$name</option>";
+    
+    }
+
+}
+
+function comboVeiculo()
+{
+    $param = "21";
+    $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculos/'. $param .'.json';  
+
+    $ch = curl_init();
+     curl_setopt($ch, CURLOPT_URL, $url1);
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
+
+    $json = json_decode(curl_exec($ch), true); 
+    
+    foreach($json as $i => $item) { 
+
+        $name = $json[$i]['name'];
+        $fipe_id = $json[$i]['id']; 
+
+       echo "<option value=\"$fipe_id\">$name</option>";
+    
+    }
+
+}
+
+function comboVeiculosAno()
+{
+    $param1 = "21";
+	$param2 = "4828";
+    $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculo/'. $param1 .'/' . $param2 .'.json';
+
+    $ch = curl_init();
+     curl_setopt($ch, CURLOPT_URL, $url1);
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
+
+    $json = json_decode(curl_exec($ch), true); 
+    
+    foreach($json as $i => $item) { 
+
+        $veiculo = $json[$i]['veiculo'];
+        $fipe_id = $json[$i]['id']; 
+		$key=$json[$i]['key'];
+
+       echo "<option value=\"$fipe_id\">$veiculo $key </option>";
+    
+    }
+}
+
+function comboVeiculosDetalhe()
+    {
+        $param1 = "21";
+        $param2 = "4828";
+        $param3 = "2013-1";
+        $url1 = 'http://fipeapi.appspot.com/api/1/carros/veiculo/'. $param1 .'/' . $param2 .'/'. $param3 .'.json';
+    
+        $ch = curl_init();
+         curl_setopt($ch, CURLOPT_URL, $url1);
+         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);    
+    
+        $json = json_decode(curl_exec($ch), true); 
+        
+        foreach($json as $item) { 
+			
+			
+            $veiculo = $json['veiculo'];
+            $fipe_id = $json['id']; 
+    
+           $combo = $combo .  "<option value=\"$fipe_id\">$veiculo</option>";
+        
+       }
+		
+   echo $combo;
+}
+
+
+function comboAno($param){
+    
+	for ($x = 1929; $x <= 2020; $x++) {
+		echo "<option value=\"$x\">$param $x</option>";
+	}
+}
+
+function comboValor($param){
+    
+	for ($x = 4; $x <= 200;$x+=2) {
+		echo "<option value=\"$x\">$param R$ $x mil</option>";
+
+	}
+}
+
+?>
