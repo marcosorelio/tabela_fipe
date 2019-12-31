@@ -170,6 +170,17 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+table {
+  border-collapse: collapse;
+  width:100%;
+  text-align:left;
+}
+
+table, td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
     
     </style>
 </head>
@@ -231,49 +242,62 @@ fieldset {
   <div class="container2">
 
     <form id="contact" action="" method="post"> 
-    <h3> Resultados da Pesquisa : </h3>
-      <h4>Foram encontrados 15 itens coincidindo com sua pesquisa. </h4>
+    <div style="width:100%">
+    <div style="width:50%"><h3>Carro de Exemplo 14 :</h3></div> 
+    <div style="float:right"><h3>R$100.000,00</h3></div></div>
+      <p><h4>Desconhecido 20.000 Km | Automático | 1L | Carro | Urbano | Gasolina |</h4>
       <hr>
 
   <div style="background-color: #f9f1f1;border: 1px solid #ddd; margin-bottom: 20px;">
       <fieldset>
-        <img src="noimage.png" style="float:left;margin-right: 12px;"><p>
-      <h3>Carro de Exemplo 1</h3>
-      <h4>30.000 Km / Semi-Automático / 6L SUV / Deisel</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue. Pellentesque nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu tristique neque consequ Desconhecido</p>
-      
+        <center><img src="noimage.png"></center>
     </fieldset>
 </div>
 
-<div style="background-color: #f9f1f1;border: 1px solid #ddd; margin-bottom: 20px;">
-      <fieldset>
-        <img src="noimage.png" style="float:left;margin-right: 12px;"><p>
-      <h3>Carro de Exemplo 1</h3>
-      <h4>30.000 Km / Semi-Automático / 6L SUV / Deisel</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue. Pellentesque nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu tristique neque consequ Desconhecido</p>
-      
-    </fieldset>
-</div>
 
-<div style="background-color: #f9f1f1;border: 1px solid #ddd; margin-bottom: 20px;">
-      <fieldset>
-        <img src="noimage.png" style="float:left;margin-right: 12px;"><p>
-      <h3>Carro de Exemplo 1</h3>
-      <h4>30.000 Km / Semi-Automático / 6L SUV / Deisel</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue. Pellentesque nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu tristique neque consequ Desconhecido</p>
-      
-    </fieldset>
-</div>
 
-<div style="background-color: #f9f1f1;border: 1px solid #ddd; margin-bottom: 20px;">
       <fieldset>
-        <img src="noimage.png" style="float:left;margin-right: 12px;"><p>
-      <h3>Carro de Exemplo 1</h3>
+      <div style="background-color: #f9f1f1; solid #ddd; ">
+      <h2>DETALHES DO VEÍCULO</h2></div>
       <h4>30.000 Km / Semi-Automático / 6L SUV / Deisel</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue. Pellentesque nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu tristique neque consequ Desconhecido</p>
       
     </fieldset>
-</div>
+
+    
+
+    <table ><tbody><tr class="even">
+					<th>Status</th>
+					<td></td>
+					</tr><tr class="odd">
+					<th>Tipo</th>
+					<td>Carro Urbano</td>
+					</tr><tr class="even">
+					<th>Preço</th>
+					<td>100000</td>
+					</tr><tr class="odd">
+					<th>Ano</th>
+					<td>2010</td>
+					</tr><tr class="even">
+					<th>Quilometragem</th>
+					<td>20000</td>
+					</tr><tr class="odd">
+					<th>Exterior</th>
+					<td>Vermelho</td>
+					</tr><tr class="even">
+					<th>Interior</th>
+					<td>Plástico</td>
+					</tr><tr class="odd">
+					<th>Condução</th>
+					<td>Esquerda</td>
+					</tr><tr class="even">
+					<th>Transmissão</th>
+					<td>Automático</td>
+					</tr><tr class="odd">
+					<th>Combustível</th>
+					<td>Gasolina</td>
+					</tr></tbody></table>
+    
 
     
       <p class="copyright">Designed by <a href="" target="_blank" title="Mojunior">Mojunior</a></p>
